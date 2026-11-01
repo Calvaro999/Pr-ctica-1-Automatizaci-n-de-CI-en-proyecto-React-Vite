@@ -21,6 +21,8 @@ jobs:
 
       - name: Instalar las dependencias
         run: npm install
+        working-directory: mi-app
 
       - name: Ejecutar build de la aplicación
         run: npm run build
+        working-directory: mi-app
