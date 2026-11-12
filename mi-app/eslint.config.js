@@ -7,6 +7,11 @@ export default [
         languageOptions: {
             ecmaVersion: 2020,
             sourceType: "module",
+            globals: {
+                window: "readonly",
+                document: "readonly",
+                navigator: "readonly"
+            },
             parserOptions: {
                 ecmaFeatures: {
                     jsx: true
@@ -14,7 +19,7 @@ export default [
             }
         },
         rules: {
-            "no-unused-vars": "warn" // Detecta variables sin usar
+            "no-unused-vars": "warn"
         }
     }
 ];
